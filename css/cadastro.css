@@ -1,0 +1,95 @@
+html{
+    height: 100vh;
+    overflow: hidden; 
+}
+
+
+.login, .login-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.login-container{
+    flex-direction: column;
+}
+
+.login-container h2{
+    font-size: 96px;
+    margin-top: 4rem;
+}
+
+
+.login-container h2 span{
+    color: #1900B1;
+}
+
+.input-container{
+    margin-top: 6rem;
+}
+
+.input-container input{
+    height: 50px;
+    width: 450px;
+    border-radius: 45px;
+    border: solid 5px #1900B1;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.input-container h1{
+    position: absolute;
+    font-weight: 900;
+    font-size: 23px;
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 10REM;
+    margin-top: 2px;
+}
+
+.btn-entrar, .btn-entrar1{
+height: 60px;
+width: 300px;
+border-radius: 45px;
+border: solid 5px;
+}
+
+.btn-entrar{
+    background-color: #1900B1;
+    border: none;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-entrar1{
+    background-color: #ffffff00;
+    border: solid 5px  #1900B1;
+    font-size: 25px;
+    color: #1900B1;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao1{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cadastro{
+    margin-top: 2rem;
+font-size: 18px;
+font-weight: 700;
+}
