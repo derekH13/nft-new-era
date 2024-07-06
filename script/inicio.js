@@ -130,20 +130,36 @@ btnCarteira.addEventListener('click', () => {
 
     carteira();
 
-    mostrarSaldo();
+    mostrarSaldo(saldoBancario);
 
+ 
     
 
 // ===================fechar ===================
 
     const fecharC = document.querySelector('.fechar2');
    
+const adicionar = document.getElementById('adicionar');
+adicionar.addEventListener('click', () => {
 
+document.querySelector('.container-add').style.visibility = "visible";    
+})   
 });
 
 
+const depositar = document.querySelector('.depositar');
+    depositar.addEventListener('click', () => {
+        
+        var val = document.querySelector(".alinhar-depositar input").value;
+        var x = +val;
+        console.log(x);
+        document.querySelector('.container-add').style.visibility = "hidden";
+        let y = val.length;
+
+        conferir(y, x);
 
 
+    });
 
 
 
@@ -165,11 +181,45 @@ modalCarteira.classList.remove('active');
 
 }
 
-function mostrarSaldo(){
+function conferir(y, x){
+    console.log('cga')
+    if(y < 7){
 
-const saldo = document.querySelector('.conta h2');
-saldo.innerHTML = "R$ " + saldoBancario;//colocar outra variavel com pontos e virgulas no saldo  
+        document.querySelector('.erro-depositar').style.visibility = "hidden";
+            modificarSaldo(x);
+
+            
+    }else{
+        document.querySelector('.erro-depositar').style.visibility = "visible";
+        console.log('deu erro');
+    }
+}
+
+
+
+
+
+
+
+
+
+function modificarSaldo(valor){
+console.log('modificar')
+    let g = valor;
+saldoBancario += g;
+
+mostrarSaldo(saldoBancario);
+}
+
+
+
+function mostrarSaldo(x){
+       
+    const saldo = document.querySelector('.conta h2');
+    saldo.innerHTML = "R$ " + x;//colocar outra variavel com pontos e virgulas no saldo  
+
 
 }
+
 
 

@@ -619,7 +619,52 @@ font-size: 30px;
     
 }
 
+.container-add{
+    backdrop-filter: blur(7px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    
+  
+}
 
+.container-add input{
+    padding-left: 4px;
+    font-size: 18px;
+    margin-top: 17rem;
+    background-color: #ffffff;
+    height: 50px;
+    width: 320px;
+    border: none;
+    border-radius: 20px;
+    color: #000000;
+    border: solid 3px rgb(153, 153, 153);
+}
+
+.container-add button{
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    font-weight: 700;
+}
+
+.erro-depositar{
+    position: absolute;
+    background-color: #ff0000;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 70rem;
+    visibility: hidden;
+    
+}
 
 /* ========================== MEDIA QUERY ================== */
 

@@ -24,7 +24,7 @@ if(isset($_SESSION['login'])){
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <!-- CSS -->
- <link rel="stylesheet" href="./css/principal.css">
+ <link rel="stylesheet" href="./css/principal-style.css">
  <!-- font racing -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -222,11 +222,18 @@ if(isset($_SESSION['login'])){
 <div class="windown-carteira">
 
         
-                
+             <div class="container-add">
+               
+                <div class="alinhar-depositar">
+                    <input type="number" name="adicionado" placeholder="digite o valor que deseja depositar!">
+                    <button  class="depositar">DEPOSITAR</button>
+                    </div>
+               
+             </div>   
 
     <div class="container-carteira">
 
-
+<h1 class="erro-depositar">valor muito alto para depositar!</h1>
 
         <div class="carteira-bloco">
 
@@ -244,10 +251,10 @@ if(isset($_SESSION['login'])){
                 </div><!--fechar-->
                 </div><!--flex-->
 
-                <div class="conta">(BRL)<h2>R$ 1.000,00</h2></div>
+                <div class="conta">(BRL)<h2>|</h2></div>
 
                 <div class="alinhar-botao">
-                    <button class="btn-carteira">
+                    <button class="btn-carteira" id="adicionar">
                        <img src="./img/addw.png" alt="">
                     </button>
                     <button class="btn-carteira">
@@ -278,6 +285,8 @@ if(isset($_SESSION['login'])){
         </div><!--carteira-->
     </div><!--container-carteira-->
 </div>
+
+
 
     <script src="./script/nftT.js"></script>
     <script src="./script/inicio.js"></script>
